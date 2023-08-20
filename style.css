@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.hanini{
+    width: 500px;
+    height: 200px;
+    cursor: pointer;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    font-size: 80px;
+}
+.col-1 h3{
+    font-size: 50px;
+    color: rgb(75, 26, 7);
+    font-weight: 160;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font-size: 30px;
+    color: #110404;
+    font-weight: 100;
+}
+button{
+    width: 100px;
+    border: 50;
+    padding:25px 20px;
+    outline: none;
+    margin: 10px 0 5px;
+    background: linear-gradient(to right, #c0819a, #aa7272);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+button a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+button img{
+    width: 30px;
+}
+button:hover img{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+}
+.col-1::after{
+    content: '';
+    width: 15px;
+    height: 70%;
+    background: linear-gradient(to right, #070003, #ff5ea2);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.hanifah{
+    width: 120%;
+}
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 100;
+    background: linear-gradient(#ff5ea2, #070003);
+    border-radius: 30px 0 0 20px;
+    height: 65%;
+    width: 150%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+.add-btn{
+    color: aquamarine;
+    cursor: pointer;
+    position: relative;
+}
+.add-btn button{
+    height: 1000%;
+    width: 150%;
+}
+.social-links img{
+    height: 44px;
+    margin: 44px;
+    cursor: pointer;
+}
+.linkedin-links{
+    text-align: center;
+}
+.social-links{
+    text-align: center;
+}
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#ff5ea2, #070003);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+    }
+
+}
